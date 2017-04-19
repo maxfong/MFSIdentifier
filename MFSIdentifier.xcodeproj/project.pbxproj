@@ -8,12 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		5150469AF22029F74EDD9C79 /* libPods-MFSIdentifier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1FA2ABB48B158EA2A51E01 /* libPods-MFSIdentifier.a */; };
-		A9BBD9DE1EA4FCCD003DDD7C /* MFSIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = A9BBD9DC1EA4FCCD003DDD7C /* MFSIdentifier.h */; };
+		A92F764E1EA5ED6A0029B45E /* MFSKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = A92F764C1EA5ED6A0029B45E /* MFSKeyChain.h */; };
+		A92F764F1EA5ED6A0029B45E /* MFSKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = A92F764D1EA5ED6A0029B45E /* MFSKeyChain.m */; };
+		A92F76521EA5FBA40029B45E /* MFSSafariIDManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A92F76501EA5FBA40029B45E /* MFSSafariIDManager.h */; };
+		A92F76531EA5FBA40029B45E /* MFSSafariIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A92F76511EA5FBA40029B45E /* MFSSafariIDManager.m */; };
+		A92F76571EA600110029B45E /* NSString+MFSIDURLEncoded.h in Headers */ = {isa = PBXBuildFile; fileRef = A92F76551EA600110029B45E /* NSString+MFSIDURLEncoded.h */; };
+		A92F76581EA600110029B45E /* NSString+MFSIDURLEncoded.m in Sources */ = {isa = PBXBuildFile; fileRef = A92F76561EA600110029B45E /* NSString+MFSIDURLEncoded.m */; };
+		A9B97CA01EA60D4E0038D221 /* MFSIDDelegateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B97C9E1EA60D4E0038D221 /* MFSIDDelegateHelper.h */; };
+		A9B97CA11EA60D4E0038D221 /* MFSIDDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B97C9F1EA60D4E0038D221 /* MFSIDDelegateHelper.m */; };
+		A9B97CA41EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B97CA21EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h */; };
+		A9B97CA51EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B97CA31EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.m */; };
+		A9B97CAE1EA6182C0038D221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B97CAD1EA6182C0038D221 /* main.m */; };
+		A9B97CB11EA6182C0038D221 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B97CB01EA6182C0038D221 /* AppDelegate.m */; };
+		A9B97CB41EA6182C0038D221 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B97CB31EA6182C0038D221 /* ViewController.m */; };
+		A9B97CB71EA6182C0038D221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B97CB51EA6182C0038D221 /* Main.storyboard */; };
+		A9B97CB91EA6182C0038D221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B97CB81EA6182C0038D221 /* Assets.xcassets */; };
+		A9B97CBC1EA6182C0038D221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B97CBA1EA6182C0038D221 /* LaunchScreen.storyboard */; };
+		A9B97CC31EA618400038D221 /* MFSIdentifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BBD9D11EA4FAC6003DDD7C /* MFSIdentifier.framework */; };
+		A9BBD9DE1EA4FCCD003DDD7C /* MFSIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = A9BBD9DC1EA4FCCD003DDD7C /* MFSIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9BBD9DF1EA4FCCD003DDD7C /* MFSIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BBD9DD1EA4FCCD003DDD7C /* MFSIdentifier.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A9B97CC11EA6183B0038D221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9BBD9C81EA4FAC6003DDD7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9BBD9D01EA4FAC6003DDD7C;
+			remoteInfo = MFSIdentifier;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3D1FA2ABB48B158EA2A51E01 /* libPods-MFSIdentifier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MFSIdentifier.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92F764C1EA5ED6A0029B45E /* MFSKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSKeyChain.h; sourceTree = "<group>"; };
+		A92F764D1EA5ED6A0029B45E /* MFSKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSKeyChain.m; sourceTree = "<group>"; };
+		A92F76501EA5FBA40029B45E /* MFSSafariIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSSafariIDManager.h; sourceTree = "<group>"; };
+		A92F76511EA5FBA40029B45E /* MFSSafariIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSSafariIDManager.m; sourceTree = "<group>"; };
+		A92F76551EA600110029B45E /* NSString+MFSIDURLEncoded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MFSIDURLEncoded.h"; sourceTree = "<group>"; };
+		A92F76561EA600110029B45E /* NSString+MFSIDURLEncoded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MFSIDURLEncoded.m"; sourceTree = "<group>"; };
+		A9B97C9E1EA60D4E0038D221 /* MFSIDDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSIDDelegateHelper.h; sourceTree = "<group>"; };
+		A9B97C9F1EA60D4E0038D221 /* MFSIDDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSIDDelegateHelper.m; sourceTree = "<group>"; };
+		A9B97CA21EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MFSIDURLQuery.h"; sourceTree = "<group>"; };
+		A9B97CA31EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MFSIDURLQuery.m"; sourceTree = "<group>"; };
+		A9B97CAA1EA6182C0038D221 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B97CAD1EA6182C0038D221 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9B97CAF1EA6182C0038D221 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9B97CB01EA6182C0038D221 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9B97CB21EA6182C0038D221 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9B97CB31EA6182C0038D221 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9B97CB61EA6182C0038D221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9B97CB81EA6182C0038D221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9B97CBB1EA6182C0038D221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9B97CBD1EA6182C0038D221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BBD9D11EA4FAC6003DDD7C /* MFSIdentifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFSIdentifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BBD9D51EA4FAC6003DDD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BBD9DC1EA4FCCD003DDD7C /* MFSIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSIdentifier.h; sourceTree = "<group>"; };
@@ -23,6 +70,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A9B97CA71EA6182C0038D221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B97CC31EA618400038D221 /* MFSIdentifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9BBD9CD1EA4FAC6003DDD7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +106,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A92F76541EA5FFDC0029B45E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A92F76551EA600110029B45E /* NSString+MFSIDURLEncoded.h */,
+				A92F76561EA600110029B45E /* NSString+MFSIDURLEncoded.m */,
+				A9B97CA21EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h */,
+				A9B97CA31EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A9B97CAB1EA6182C0038D221 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97CAF1EA6182C0038D221 /* AppDelegate.h */,
+				A9B97CB01EA6182C0038D221 /* AppDelegate.m */,
+				A9B97CB21EA6182C0038D221 /* ViewController.h */,
+				A9B97CB31EA6182C0038D221 /* ViewController.m */,
+				A9B97CB51EA6182C0038D221 /* Main.storyboard */,
+				A9B97CB81EA6182C0038D221 /* Assets.xcassets */,
+				A9B97CBA1EA6182C0038D221 /* LaunchScreen.storyboard */,
+				A9B97CBD1EA6182C0038D221 /* Info.plist */,
+				A9B97CAC1EA6182C0038D221 /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A9B97CAC1EA6182C0038D221 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97CAD1EA6182C0038D221 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A9BBD9C71EA4FAC6003DDD7C = {
 			isa = PBXGroup;
 			children = (
 				A9BBD9D31EA4FAC6003DDD7C /* MFSIdentifier */,
+				A9B97CAB1EA6182C0038D221 /* Demo */,
 				A9BBD9D21EA4FAC6003DDD7C /* Products */,
 				6B58BDC3EF2DBA0C110A0276 /* Pods */,
 				10EB2197CB1B5C3838EA1CF9 /* Frameworks */,
@@ -65,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A9BBD9D11EA4FAC6003DDD7C /* MFSIdentifier.framework */,
+				A9B97CAA1EA6182C0038D221 /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,8 +164,15 @@
 		A9BBD9D31EA4FAC6003DDD7C /* MFSIdentifier */ = {
 			isa = PBXGroup;
 			children = (
+				A92F76541EA5FFDC0029B45E /* Category */,
 				A9BBD9DC1EA4FCCD003DDD7C /* MFSIdentifier.h */,
 				A9BBD9DD1EA4FCCD003DDD7C /* MFSIdentifier.m */,
+				A92F764C1EA5ED6A0029B45E /* MFSKeyChain.h */,
+				A92F764D1EA5ED6A0029B45E /* MFSKeyChain.m */,
+				A92F76501EA5FBA40029B45E /* MFSSafariIDManager.h */,
+				A92F76511EA5FBA40029B45E /* MFSSafariIDManager.m */,
+				A9B97C9E1EA60D4E0038D221 /* MFSIDDelegateHelper.h */,
+				A9B97C9F1EA60D4E0038D221 /* MFSIDDelegateHelper.m */,
 				A9BBD9D51EA4FAC6003DDD7C /* Info.plist */,
 			);
 			path = MFSIdentifier;
@@ -87,12 +186,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BBD9DE1EA4FCCD003DDD7C /* MFSIdentifier.h in Headers */,
+				A92F76571EA600110029B45E /* NSString+MFSIDURLEncoded.h in Headers */,
+				A92F76521EA5FBA40029B45E /* MFSSafariIDManager.h in Headers */,
+				A9B97CA41EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h in Headers */,
+				A92F764E1EA5ED6A0029B45E /* MFSKeyChain.h in Headers */,
+				A9B97CA01EA60D4E0038D221 /* MFSIDDelegateHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A9B97CA91EA6182C0038D221 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B97CBE1EA6182C0038D221 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				A9B97CA61EA6182C0038D221 /* Sources */,
+				A9B97CA71EA6182C0038D221 /* Frameworks */,
+				A9B97CA81EA6182C0038D221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B97CC21EA6183B0038D221 /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = A9B97CAA1EA6182C0038D221 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A9BBD9D01EA4FAC6003DDD7C /* MFSIdentifier */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BBD9D91EA4FAC6003DDD7C /* Build configuration list for PBXNativeTarget "MFSIdentifier" */;
@@ -122,6 +244,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = maxfong;
 				TargetAttributes = {
+					A9B97CA91EA6182C0038D221 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
 					A9BBD9D01EA4FAC6003DDD7C = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -134,6 +260,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A9BBD9C71EA4FAC6003DDD7C;
 			productRefGroup = A9BBD9D21EA4FAC6003DDD7C /* Products */;
@@ -141,11 +268,22 @@
 			projectRoot = "";
 			targets = (
 				A9BBD9D01EA4FAC6003DDD7C /* MFSIdentifier */,
+				A9B97CA91EA6182C0038D221 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A9B97CA81EA6182C0038D221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B97CBC1EA6182C0038D221 /* LaunchScreen.storyboard in Resources */,
+				A9B97CB91EA6182C0038D221 /* Assets.xcassets in Resources */,
+				A9B97CB71EA6182C0038D221 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9BBD9CF1EA4FAC6003DDD7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,17 +327,85 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A9B97CA61EA6182C0038D221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B97CB41EA6182C0038D221 /* ViewController.m in Sources */,
+				A9B97CB11EA6182C0038D221 /* AppDelegate.m in Sources */,
+				A9B97CAE1EA6182C0038D221 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9BBD9CC1EA4FAC6003DDD7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92F764F1EA5ED6A0029B45E /* MFSKeyChain.m in Sources */,
+				A92F76581EA600110029B45E /* NSString+MFSIDURLEncoded.m in Sources */,
+				A9B97CA11EA60D4E0038D221 /* MFSIDDelegateHelper.m in Sources */,
+				A9B97CA51EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.m in Sources */,
+				A92F76531EA5FBA40029B45E /* MFSSafariIDManager.m in Sources */,
 				A9BBD9DF1EA4FCCD003DDD7C /* MFSIdentifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A9B97CC21EA6183B0038D221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9BBD9D01EA4FAC6003DDD7C /* MFSIdentifier */;
+			targetProxy = A9B97CC11EA6183B0038D221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9B97CB51EA6182C0038D221 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B97CB61EA6182C0038D221 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9B97CBA1EA6182C0038D221 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B97CBB1EA6182C0038D221 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		A9B97CBF1EA6182C0038D221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imfong.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9B97CC01EA6182C0038D221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imfong.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A9BBD9D71EA4FAC6003DDD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -335,6 +541,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A9B97CBE1EA6182C0038D221 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B97CBF1EA6182C0038D221 /* Debug */,
+				A9B97CC01EA6182C0038D221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A9BBD9CB1EA4FAC6003DDD7C /* Build configuration list for PBXProject "MFSIdentifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
