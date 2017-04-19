@@ -1,18 +1,13 @@
 # MFSIdentifier
 iOS App唯一标识符获取方案
 
-### 存储方式
+### 存储方式  
 
- | 
-------------- | 
-KeyChain |
-Safari Cookie  |
-MFSCache  | 
-iCloud  | 
-IDFA  | 
-IDFV  | 
-NSUUID  | 
-NSUserDefaults  | 
+| 刷机  | APP重装  | 存储方式 |
+| :---: | :------: | :-------------: |
+| 否  |  否  |   MFSCache、NSUserDefaults  |
+| 否  | 是    |   Safari Cookie、iCloud、IDFA、IDFV、NSUUID |
+| 是 | 是  |   iCloud、IDFA、IDFV、NSUUID |
 
 ### 使用  
 
@@ -60,8 +55,5 @@ carthage update
 3. iCloud方案需设置TARGETS的Capabilities，开启iCloud并设置Key-value storage
  
  
-## 其他
+### 其他
 如果您发现任何问题或有啥建议，发个issues，谢谢
-
-## License
-MFSIdentifier is available under the MIT license. See the LICENSE file for more info.
