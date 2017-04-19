@@ -5,6 +5,7 @@ iOS App唯一标识符获取方案
 
  | 
 ------------- | 
+KeyChain |
 Safari Cookie  |
 MFSCache  | 
 iCloud  | 
