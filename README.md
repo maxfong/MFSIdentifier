@@ -1,8 +1,6 @@
 # MFSIdentifier
 iOS App唯一标识符获取方案
 
-### 存储方式  
-
 | 刷机  | APP重装  | 存储方式 |
 | :---: | :------: | :-------------: |
 | 否  |  否  |   MFSCache、NSUserDefaults  |
