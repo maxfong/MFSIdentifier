@@ -55,3 +55,6 @@ carthage update
  
 ### 其他
 如果您发现任何问题或有啥建议，发个issues，谢谢
+
+### License
+MFSIdentifier is available under the MIT license. See the LICENSE file for more info.
