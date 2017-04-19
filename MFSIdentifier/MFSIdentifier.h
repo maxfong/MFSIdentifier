@@ -4,7 +4,7 @@
 //
 //  Created by maxfong on 2017/4/17.
 //  Copyright © 2017年 imfong.com. All rights reserved.
-//
+//  Version 1.0.0 , updated_at 2017-04-19. https://github.com/maxfong/MFSIdentifier
 
 #import <Foundation/Foundation.h>
 
