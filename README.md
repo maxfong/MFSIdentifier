@@ -13,6 +13,15 @@ IDFV  |
 NSUUID  | 
 NSUserDefaults  | 
 
+### 使用  
+
+```
+#import <MFSIdentifier/MFSIdentifier.h>
+
+NSString *deviceID = [MFSIdentifier deviceID];
+NSLog(@"deviceId: %@", deviceID);
+```
+
 ### 安装  
 
 #### CocoaPods
