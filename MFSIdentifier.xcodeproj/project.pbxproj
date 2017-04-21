@@ -14,6 +14,8 @@
 		A92F76531EA5FBA40029B45E /* MFSSafariIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A92F76511EA5FBA40029B45E /* MFSSafariIDManager.m */; };
 		A92F76571EA600110029B45E /* NSString+MFSIDURLEncoded.h in Headers */ = {isa = PBXBuildFile; fileRef = A92F76551EA600110029B45E /* NSString+MFSIDURLEncoded.h */; };
 		A92F76581EA600110029B45E /* NSString+MFSIDURLEncoded.m in Sources */ = {isa = PBXBuildFile; fileRef = A92F76561EA600110029B45E /* NSString+MFSIDURLEncoded.m */; };
+		A997B4F51EA9A00400C6DBEC /* MFSIdentifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BBD9D11EA4FAC6003DDD7C /* MFSIdentifier.framework */; };
+		A997B4F61EA9A00400C6DBEC /* MFSIdentifier.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9BBD9D11EA4FAC6003DDD7C /* MFSIdentifier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9B97CA01EA60D4E0038D221 /* MFSIDDelegateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B97C9E1EA60D4E0038D221 /* MFSIDDelegateHelper.h */; };
 		A9B97CA11EA60D4E0038D221 /* MFSIDDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B97C9F1EA60D4E0038D221 /* MFSIDDelegateHelper.m */; };
 		A9B97CA41EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B97CA21EA6121D0038D221 /* NSDictionary+MFSIDURLQuery.h */; };
@@ -38,6 +40,20 @@
 			remoteInfo = MFSIdentifier;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A997B4F71EA9A00400C6DBEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A997B4F61EA9A00400C6DBEC /* MFSIdentifier.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D1FA2ABB48B158EA2A51E01 /* libPods-MFSIdentifier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MFSIdentifier.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A997B4F51EA9A00400C6DBEC /* MFSIdentifier.framework in Frameworks */,
 				A9B97CC31EA618400038D221 /* MFSIdentifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +221,7 @@
 				A9B97CA61EA6182C0038D221 /* Sources */,
 				A9B97CA71EA6182C0038D221 /* Frameworks */,
 				A9B97CA81EA6182C0038D221 /* Resources */,
+				A997B4F71EA9A00400C6DBEC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
