@@ -1,11 +1,11 @@
 # MFSIdentifier
 iOS App获取唯一标识符方案
 
-| 刷机/还原所有设置  | APP卸载重装  | 获取方式及优先级 | DeviceID相同 | 
+| 刷机/还原设置  | APP卸载重装  | 标识符相同 | 获取方式及优先级 | 
 | :---: | :------: | :-------------: | :----: |
-| 否  |  否  |   MFSCache、NSUserDefaults  |  是 |
-| 否  | 是    |   KeyChain、Safari Cookie、iCloud、IDFA、IDFV、NSUUID |  是 |
-| 是 | 是  |   iCloud、IDFA、IDFV、NSUUID |  是(需开启iCloud) |
+| 否  |  否  |  是 |   MFSCache、NSUserDefaults  |
+| 否  |  是  |  是 |   KeyChain、Safari Cookie、iCloud、IDFA、IDFV、NSUUID |
+| 是  | 是   |  是(需开启iCloud) |   iCloud、IDFA、IDFV、NSUUID |
 
 ### 使用  
 
