@@ -5,7 +5,7 @@ iOS App获取唯一标识符方案
 | :---: | :------: | :-------------: | :----: |
 | 否  |  否  |  是 |   MFSCache、NSUserDefaults  |
 | 否  |  是  |  是 |   KeyChain、Safari Cookie、iCloud、IDFA、IDFV、NSUUID |
-| 是  | 是   |  是(需开启iCloud) |   iCloud、IDFA、IDFV、NSUUID |
+| 是  | 是   |  是 |   iCloud、IDFA、IDFV、NSUUID |
 
 ### 使用  
 
