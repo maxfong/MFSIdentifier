@@ -50,8 +50,9 @@ carthage update
 ### 注意
 1. Safari Cookie支持需iOS9.0及以上。
 2. 设置[MFSCacheUtility registerAESKey:]达到其他应用获取了数据也无法正确解密  
-3. iCloud方案需设置TARGETS的Capabilities，开启iCloud并设置Key-value storage
+3. 刷机后能获取相同标识符依靠iCloud，开启iCloud的方式如下
  
+ ![iCloud Setting](Assets/settingicloud.png)
  
 ### 其他
 如果您发现任何问题或有啥建议，发个issues，谢谢
