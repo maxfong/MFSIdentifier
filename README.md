@@ -1,7 +1,7 @@
 # MFSIdentifier
-iOS App唯一标识符获取方案
+iOS App获取唯一标识符方案
 
-| 刷机  | APP重装  | 存储方式 |
+| 刷机/还原所有设置  | APP卸载重装  | 存储方式 |
 | :---: | :------: | :-------------: |
 | 否  |  否  |   MFSCache、NSUserDefaults  |
 | 否  | 是    |   KeyChain、Safari Cookie、iCloud、IDFA、IDFV、NSUUID |
