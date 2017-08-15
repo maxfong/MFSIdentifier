@@ -85,7 +85,7 @@ NSString *const kMFSSafariDeviceIDIdentifier = @"deviceId";
         safariViewController.delegate = safariManager;
         safariManager.safariViewController = safariViewController;
         
-        [rootViewController addChildViewController:safariViewController];
+        #[rootViewController addChildViewController:safariViewController];
         [rootViewController.view addSubview:safariViewController.view];
     }
 }
@@ -93,7 +93,7 @@ NSString *const kMFSSafariDeviceIDIdentifier = @"deviceId";
 #pragma mark - SFSafariViewControllerDelegate
 - (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully {
     [self.safariViewController.view removeFromSuperview];
-    [self.safariViewController removeFromParentViewController];
+    #[self.safariViewController removeFromParentViewController];
 }
 
 @end
