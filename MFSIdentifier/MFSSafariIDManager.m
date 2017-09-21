@@ -81,19 +81,20 @@ NSString *const kMFSSafariDeviceIDIdentifier = @"deviceId";
     {
         MFSSafariIDManager *safariManager = [MFSSafariIDManager defaultManager];
         SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
-        safariViewController.view.frame = CGRectMake(0, 0, 1, 1);
+        CGFloat width = [[UIScreen mainScreen] bounds].size.width;
+        safariViewController.view.frame = CGRectMake(0, 0, width, 64);
         safariViewController.delegate = safariManager;
         safariManager.safariViewController = safariViewController;
         
-        #[rootViewController addChildViewController:safariViewController];
-        [rootViewController.view addSubview:safariViewController.view];
+        [rootViewController.view.superview insertSubview:safariViewController.view atIndex:0];
+        [rootViewController addChildViewController:safariViewController];
     }
 }
 
 #pragma mark - SFSafariViewControllerDelegate
 - (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully {
     [self.safariViewController.view removeFromSuperview];
-    #[self.safariViewController removeFromParentViewController];
+    [self.safariViewController removeFromParentViewController];
 }
 
 @end
