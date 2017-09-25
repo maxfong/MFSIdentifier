@@ -14,4 +14,10 @@
 + (void)setDeviceId:(NSString *)deviceId;
 + (NSString *)deviceId;
 
+/**
+ 增加外部控制处理某些特殊情况，需在-application:didFinishLaunchingWithOptions:中设置
+ @param enable 设NO则不添加Safari Cookie流程，默认YES
+ */
++ (void)enable:(BOOL)enable;
+
 @end
