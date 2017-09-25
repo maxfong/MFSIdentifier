@@ -66,11 +66,10 @@ NSString *const kMFSSafariDeviceIDIdentifier = @"deviceId";
 }
 
 + (instancetype)defaultManager {
-    static MFSSafariIDManager *instance;
+    static id instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = self.new;
-        instance.enable = YES;
     });
     return instance;
 }
