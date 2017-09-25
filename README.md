@@ -22,7 +22,7 @@ NSLog(@"deviceId: %@", deviceID);
 
 ```
 编辑Pofile
-pod 'MFSIdentifier', '1.0.1'
+pod 'MFSIdentifier', '1.0.2'
 ```
 
 ```
@@ -35,7 +35,7 @@ pod install
 #### Carthage
 ```
 编辑Cartfile
-github "maxfong/MFSIdentifier" >= 1.0.1
+github "maxfong/MFSIdentifier" >= 1.0.2
 ```
 
 ```
