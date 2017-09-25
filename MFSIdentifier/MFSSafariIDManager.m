@@ -18,6 +18,7 @@ NSString *const kMFSSafariDeviceIDIdentifier = @"deviceId";
 
 @interface MFSSafariIDManager ()
 @property (nonatomic, strong) SFSafariViewController *safariViewController;
+@property (nonatomic, assign) BOOL enable;
 @end
 
 @implementation MFSSafariIDManager
@@ -65,29 +66,40 @@ NSString *const kMFSSafariDeviceIDIdentifier = @"deviceId";
 }
 
 + (instancetype)defaultManager {
-    static id instance;
+    static MFSSafariIDManager *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = self.new;
+        instance.enable = YES;
     });
     return instance;
 }
 
++ (void)enable:(BOOL)enable {
+    [MFSSafariIDManager defaultManager].enable = enable;
+}
+
 + (void)openURL:(NSURL *)url {
-    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    if (url && [url isKindOfClass:[NSURL class]] &&
-        rootViewController &&
-        [[[UIDevice currentDevice] systemVersion] compare:@"9.0" options:NSNumericSearch] != NSOrderedAscending)
-    {
-        MFSSafariIDManager *safariManager = [MFSSafariIDManager defaultManager];
-        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
-        CGFloat width = [[UIScreen mainScreen] bounds].size.width;
-        safariViewController.view.frame = CGRectMake(0, 0, width, 64);
-        safariViewController.delegate = safariManager;
-        safariManager.safariViewController = safariViewController;
-        
-        [rootViewController.view.superview insertSubview:safariViewController.view atIndex:0];
-        [rootViewController addChildViewController:safariViewController];
+    MFSSafariIDManager *safariManager = [MFSSafariIDManager defaultManager];
+    if (safariManager.enable) {
+        UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+        UIViewController *rootViewController = keyWindow.rootViewController;
+        if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+            rootViewController = rootViewController.childViewControllers.firstObject;
+        }
+        if (url && [url isKindOfClass:[NSURL class]] &&
+            rootViewController &&
+            [[[UIDevice currentDevice] systemVersion] compare:@"9.0" options:NSNumericSearch] != NSOrderedAscending)
+        {
+            SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
+            CGFloat width = [[UIScreen mainScreen] bounds].size.width;
+            safariViewController.view.frame = CGRectMake(0, 0, width, 64);
+            safariViewController.delegate = safariManager;
+            safariManager.safariViewController = safariViewController;
+            
+            [keyWindow insertSubview:safariViewController.view atIndex:0];
+            [rootViewController addChildViewController:safariViewController];
+        }
     }
 }
 
