@@ -49,21 +49,21 @@ NSString *const kMFSIdentifierUserDeviceIdKey = @"com.imfong.MFSIdentifier.UserD
         NSString *deviceId = [MFSKeyChain objectForKey:keyChainKey];
         if (!deviceId.length) {
             deviceId = [MFSSafariIDManager deviceId];
-            if (!deviceId.length) {
-                deviceId = cacheDeviceId;
-                if (!deviceId.length) {
-                    deviceId = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:kMFSIdentifierUserDeviceIdKey];
-                    if (!deviceId.length) {
-                        deviceId = [self idfa];
-                        if (!deviceId.length) {
-                            deviceId = [self idfv];
-                            if (!deviceId.length) {
-                                deviceId = [[NSUUID UUID] UUIDString];
-                            }
-                        }
-                    }
-                }
-            }
+        }
+        if (!deviceId.length) {
+            deviceId = cacheDeviceId;
+        }
+        if (!deviceId.length) {
+            deviceId = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:kMFSIdentifierUserDeviceIdKey];
+        }
+        if (!deviceId.length) {
+            deviceId = [self idfa];
+        }
+        if (!deviceId.length) {
+            deviceId = [self idfv];
+        }
+        if (!deviceId.length) {
+            deviceId = [[NSUUID UUID] UUIDString];
         }
         if (deviceId.length) {
             [MFSKeyChain setObject:deviceId forKey:keyChainKey];
